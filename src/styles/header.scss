@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    // .navbar-mobile-container {
+
+    // }
+    .navbar-link-list {
+        display: none;
+        list-style-type: none;
+        align-items: center;
+
+        li {
+            margin: 0 20px;
+        }
+
+        @media (min-width: 480px) {
+            display: flex;
+        }
+    }
+
+}
