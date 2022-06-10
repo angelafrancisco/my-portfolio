@@ -26,6 +26,24 @@ a {
   }
 }
 
+.hero-wrapper.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .hero-box-text {
+    width: 300px;
+  
+    .hero-text {
+      margin: 15px auto;
+
+      &.name {
+        font-size: 70px;
+      }
+    }
+  }
+}
+
 .main-content {
   padding-bottom: 300px;
 }
