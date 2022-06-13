@@ -17,12 +17,13 @@ a {
   color: $color-teal;
   font-weight: bold;
   text-decoration: none;
-  padding: 3px;
+  padding: 3px 5px;
   cursor: pointer;
 
   &:hover {
     color: rgb(0, 0, 0);
     background-color: $color-teal;
+    border-radius: 8px;
   }
 }
 
@@ -30,17 +31,29 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 
-  .hero-box-text {
-    width: 300px;
-  
+  .hero-box {
+    width: 400px;
+    
+    .avatar {
+      max-width: 85%;
+    }
+
     .hero-text {
       margin: 15px auto;
 
       &.name {
         font-size: 70px;
       }
+      .text-location {
+        color: rgb(160, 55, 55);
+      }
     }
+  }
+
+  @media (min-width: 810px){
+    flex-wrap: nowrap;
   }
 }
 
