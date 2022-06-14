@@ -3,7 +3,6 @@
 $color-teal: rgb(0, 163, 184);
 
 * {
-  text-align: center;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   margin: 0;
@@ -27,7 +26,32 @@ a {
   }
 }
 
+.content-container {
+  height: 90vh;
+  max-width: 50vw;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  .section-box {
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+
+    * {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
 .hero-wrapper.home {
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,7 +76,7 @@ a {
     }
   }
 
-  @media (min-width: 810px){
+  @media (min-width: 768px) {
     flex-wrap: nowrap;
   }
 }

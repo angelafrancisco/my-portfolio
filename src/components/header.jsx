@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-        <nav className="navbar" id="home">
+        <nav id="home" className="navbar">
             <div className="navbar-container">
                 <a href="#home" className="af-logo">AF</a>
             </div>
