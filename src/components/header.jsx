@@ -2,7 +2,9 @@ const Header = () => {
     return (
         <nav id="home" className="navbar">
             <div className="navbar-container">
-                <a href="#home" className="af-logo">AF</a>
+                <a className="logo" href="#home">
+                    <img className="logo" src="/logo.png" alt="logo" />
+                </a>
             </div>
             <div className="navbar-container">
                 {/* <div className="navbar-mobile-container">
@@ -12,16 +14,16 @@ const Header = () => {
                 </div> */}
                 <ul className="navbar-link-list">
                     <li className="nav-link">
-                        <a href="#home">Home</a>
+                        <a className="text-link" href="#home">Home</a>
                     </li>
                     <li className="nav-link">
-                        <a href="#about">About</a>
+                        <a className="text-link" href="#about">About</a>
                     </li>
                     <li className="nav-link">
-                        <a href="#portfolio">Portfolio</a>
+                        <a className="text-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li className="nav-link">
-                        <a href="#contact">Contact</a>
+                        <a className="text-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
