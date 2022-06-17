@@ -7,6 +7,9 @@ nav {
     height: 60px;
     flex-wrap: wrap;
     transition: 0.5s;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
 
     * {
         background-color: $dark-nav;
@@ -86,12 +89,9 @@ nav {
         }
 
         @media (min-width: 768px) {
-            display: none;
+            display: flex;
+            justify-content: flex-end;
         }
-    }
-    
-    @media (min-width: 768px) {
-        display: flex;
     }
 }
 
