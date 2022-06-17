@@ -1,18 +1,23 @@
+import { useState } from 'react';
+
 const Header = () => {
+    const [showing, setShowing] = useState(false);
+    const toggleShowing = () => {
+        setShowing(!showing)
+    }
+
     return (
-        <nav id="home" className="navbar">
-            <div className="navbar-container">
-                <a className="logo" href="#home">
-                    <img className="logo" src="/logo.png" alt="logo" />
-                </a>
+        <nav id="home" className={showing ? "open" : ""}>
+            <a className="logo" href="#home">
+                <img className="logo" src="/logo.png" alt="logo" />
+            </a>
+            <div onClick={toggleShowing} className={`nav-mobile-container ${showing ? "move" : ""}`}>
+                <div className="nav-hamburger bar1"></div>
+                <div className="nav-hamburger bar2"></div>
+                <div className="nav-hamburger bar3"></div>
             </div>
-            <div className="navbar-container">
-                {/* <div className="navbar-mobile-container">
-                    <div className="nav-hamburger bar1"></div>
-                    <div className="nav-hamburger bar2"></div>
-                    <div className="nav-hamburger bar3"></div>
-                </div> */}
-                <ul className="navbar-link-list">
+            <div className="nav-container">
+                <ul className={`nav-link-list ${showing ? "open-mobile" : ""}`}>
                     <li className="nav-link">
                         <a className="text-link" href="#home">Home</a>
                     </li>
