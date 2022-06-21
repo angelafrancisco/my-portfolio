@@ -7,7 +7,7 @@ const Header = () => {
     }
 
     return (
-        <nav id="home" className={showing ? "open" : ""}>
+        <nav className={showing ? "open" : ""}>
             <a className="logo" href="#home">
                 <img className="logo" src="/logo.png" alt="logo" />
             </a>

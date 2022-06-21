@@ -1,9 +1,9 @@
 const Home = () => {
     return (
-        <div className="content-container home">
+        <div id="home" className="content-container home">
             <div className="hero-section home">
                 <div className="hero-box">
-                    <img className="avatar" src="/avatar.png" alt="avatar" />
+                    <img className="avatar" src="/img/avatar.png" alt="avatar" />
                 </div>
                 <div className="hero-box">
                     <p className="hero-text small">&#128075;&#127997; Hi there, I'm</p>
