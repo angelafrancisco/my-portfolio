@@ -12,3 +12,7 @@ Built with React.js and SCSS
 <!-- [angelafrancisco.com](https://angelafrancisco.com/) -->
 
 <!-- ## Future Features -->
+
+## Credits
+
+- Responsive Device Vector by [rawpixel.com](https://www.freepik.com/vectors/tablet-screen) via [freepik](www.freepik.com)
