@@ -15,4 +15,4 @@ Built with React.js and SCSS
 
 ## Credits
 
-- Responsive Device Vector by [rawpixel.com](https://www.freepik.com/vectors/tablet-screen) via [freepik](www.freepik.com)
+- Responsive device mockup created by [rawpixel.com](https://www.freepik.com/psd/device-mockup) via [freepik](www.freepik.com)

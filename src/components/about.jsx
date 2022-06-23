@@ -7,6 +7,8 @@ const About = () => {
                     <p className="section-text">
                         I'm a software engineer based in Portland, OR.
                         <br />
+                        I love coffee and exploring the Northwest by biking, hiking and camping.
+                        <br />
                         I'm passionate about the details, and building scalable, responsive, and accessible applications. 
                         After pivoting from ten years in the nonprofit sector focused in relational database administration, 
                         I have a strong foundation in analyzing problems, maintaining complex systems and facilitating cross-team collaboration.
