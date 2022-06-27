@@ -1,6 +1,6 @@
 const Home = () => {
     return (
-        <div id="home" className="content-container home">
+        <section id="home" className="content-container home">
             <div className="hero-section home">
                 <div className="hero-box">
                     <img className="avatar" src="/img/avatar.png" alt="avatar" />
@@ -13,7 +13,7 @@ const Home = () => {
                     <a href="#connect" className="button-link">Let's connect!</a>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

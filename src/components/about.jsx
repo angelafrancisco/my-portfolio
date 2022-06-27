@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <div id="about" className="content-container about">
+        <section id="about" className="content-container about">
             <div className="section-content about">
                 <div className="section-box about">
                     <h1 className="section-title">About</h1>
@@ -15,13 +15,13 @@ const About = () => {
                         <br />
                         Some of my favorite technologies to work with recently are React.js, Node.js and SCSS.
                     </p>
+                    <a href="#" className="button-link">Download Resume</a>
                 </div>
                 <div className="section-box about">
                     <img className="about-img" src="/img/avatar-biking.png" alt="woman on bike" />
-                    <a href="#" className="button-link">Download Resume</a>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

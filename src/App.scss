@@ -27,7 +27,7 @@ $light-nav: rgb(255, 255, 255);
 }
 
 .App {
-  min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 .italic-text {
@@ -73,10 +73,42 @@ a {
 
 .content-container {
   max-width: 70vw;
-  margin: 10px auto;
+  height: 100vh;
+  margin: 50px auto;
+  scroll-margin-block-start: 200px;
+  scroll-margin-block-end: 200px;
 
+  &.portfolio {
+    margin: 0 auto;
+  }
   @media (min-width: 1024px) {
     max-width: 1024px;
+  }
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  &.portfolio {
+    @media (min-width: 768px) {
+        flex-direction: column;
+      }
+  }
+
+  &.about {
+    @media (min-width: 768px){
+      flex-direction: column;
+    }
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
   }
 }
 
@@ -88,7 +120,6 @@ a {
   justify-content: center;
 
   .hero-box {
-
     .avatar {
       max-width: 85%;
 
@@ -98,12 +129,12 @@ a {
     }
 
     .hero-text {
-
       &.name {
         font-size: 70px;
       }
 
-      &.small, &.title {
+      &.small,
+      &.title {
         margin: 15px 0;
       }
 
@@ -111,7 +142,7 @@ a {
         color: rgb(160, 55, 55);
       }
     }
-    
+
     @media (min-width: 1024px) {
       margin: 0 30px;
     }
@@ -122,52 +153,34 @@ a {
   }
 }
 
-.main-content {
-  padding-bottom: 300px;
-}
-
-.section-content {
+.section-box.about {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  .section-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 400px;
-
-    * {
-      margin-bottom: 15px;
-    }
-
-    @media (min-width: 768px) {
-      align-items: flex-start;
-    }
+  .button-link {
     @media (min-width: 1024px) {
-      margin: auto 20px;
+      margin: 15px 0;
     }
   }
 
-  &.portfolio {
-    @media (min-width: 768px) {
-        flex-direction: column;
-      }
+  .about-img {
+    width: 250px;
+    margin: 20px;
+
+    @media (min-width: 480px) {
+      width: 100%;
+    }
   }
 
-  @media (min-width: 768px) {
-    flex-direction: row;
+  * {
+    margin-bottom: 15px;
   }
-}
 
-.about-img {
-  width: 250px;
-  margin: 20px;
-  // background-color: white;
-
-  @media (min-width: 480px) {
-    min-width: 250px;
+  @media (min-width: 1024px) {
+    align-items: flex-start;
+    margin: auto 20px;
+    max-width: 400px;
   }
 }

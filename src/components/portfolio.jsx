@@ -1,6 +1,6 @@
 const Portfolio = () => {
     return (
-        <div id="portfolio" className="content-container portfolio">
+        <section id="portfolio" className="content-container portfolio">
             <div className="section-content portfolio">
                 <h1 className="section-title">Portfolio</h1>
                 <div className="grid-container">
@@ -136,7 +136,7 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
