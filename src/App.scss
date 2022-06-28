@@ -28,6 +28,10 @@ $light-nav: rgb(255, 255, 255);
 
 .App {
   scroll-behavior: smooth;
+
+  ul {
+    list-style-type: none;
+  }
 }
 
 .italic-text {
@@ -98,18 +102,18 @@ a {
       }
   }
 
-  &.about {
-    @media (min-width: 768px){
-      flex-direction: column;
-    }
-    @media (min-width: 1024px) {
-      flex-direction: row;
-    }
-  }
+  // &.about {
+  //   @media (min-width: 768px){
+  //     flex-direction: column;
+  //   }
+  //   @media (min-width: 1024px) {
+  //     flex-direction: row;
+  //   }
+  // }
 
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
+  // @media (min-width: 768px) {
+  //   flex-direction: row;
+  // }
 }
 
 .hero-section {
@@ -153,7 +157,18 @@ a {
   }
 }
 
-.section-box.about {
+.section-flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+}
+
+.section-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,6 +196,6 @@ a {
   @media (min-width: 1024px) {
     align-items: flex-start;
     margin: auto 20px;
-    max-width: 400px;
+    width: 400px;
   }
 }
