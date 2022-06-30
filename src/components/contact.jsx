@@ -11,19 +11,22 @@ const Contact = () => {
                     </p>
                     <div className="contact-links">
                         <div className="contact-links-box">
-                            <img src="#" alt="LinkedIn" />
-                            <span> LinkedIn: </span>
-                            <a href="https://www.linkedin.com/in/angela-francisco/" className="contact-link">@angela-francisco</a>
+                            <a href="https://www.linkedin.com/in/angela-francisco/" className="contact-link">
+                                <i className="fa-brands fa-linkedin"></i>
+                            </a>
+                            <p>LinkedIn</p>
                         </div>
                         <div className="contact-links-box">
-                            <img src="#" alt="Email" />
-                            <span> Email: </span>
-                            <a href="mailto:angelat.francisco@gmail.com?subject=Hello!" className="contact-link">angelat.francisco@gmail.com</a>
+                            <a href="mailto:angelat.francisco@gmail.com?subject=Hello!" className="contact-link">
+                                <i className="fa-regular fa-envelope"></i>
+                            </a>
+                            <p>Email</p>
                         </div>
                         <div className="contact-links-box">
-                            <img src="#" alt="GitHub" />
-                            <span> GitHub: </span>
-                            <a href="https://github.com/angelafrancisco" className="contact-link">@angelafrancisco</a>
+                            <a href="https://github.com/angelafrancisco" className="contact-link">
+                                <i className="fa-brands fa-github"></i>
+                            </a>
+                            <p>GitHub</p>
                         </div>
                     </div>
                 </div>

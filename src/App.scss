@@ -183,6 +183,7 @@ a {
 
   &.contact {
     width: 600px;
+    align-items: center;
   }
 
   @media (min-width: 1024px) {
@@ -200,6 +201,14 @@ a {
 }
 
 .contact-links {
+  .contact-links-box {
+    margin: 15px;
+
+    .fa-brands, .fa-regular {
+      color: $dark-link;
+    }
+  }
+
   @media (min-width: 768px){
     flex-direction: row;
   }
