@@ -193,19 +193,35 @@ a {
   }
 }
 
-.contact-links, .contact-links-box {
+.contact-links-box, .contact-link {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.contact-links {
-  .contact-links-box {
-    margin: 15px;
+.contact-links-box {
+  margin: 50px auto;
 
-    .fa-brands, .fa-regular {
-      color: $dark-link;
+  .contact-link {
+    margin: 0 20px;
+    height: 65px;
+    width: 65px;
+    color: $dark-link;
+
+    .fa-icon {
+      path {
+        fill: $dark-link;
+      }
+      height: 4em;
+    }
+
+    &:hover {
+      color: $dark-link-hover;
+      
+      .fa-icon path {
+        fill: $dark-link-hover;
+      }
     }
   }
 
