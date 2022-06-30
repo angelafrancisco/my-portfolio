@@ -31,6 +31,7 @@ $light-nav: rgb(255, 255, 255);
 
   ul {
     list-style-type: none;
+    padding: 0;
   }
 }
 
@@ -77,10 +78,10 @@ a {
 
 .content-container {
   max-width: 70vw;
-  height: 100vh;
+  min-height: 100vh;
   margin: 50px auto;
   scroll-margin-block-start: 200px;
-  scroll-margin-block-end: 200px;
+  scroll-margin-block-end: 100px;
 
   &.portfolio {
     margin: 0 auto;
@@ -101,19 +102,6 @@ a {
         flex-direction: column;
       }
   }
-
-  // &.about {
-  //   @media (min-width: 768px){
-  //     flex-direction: column;
-  //   }
-  //   @media (min-width: 1024px) {
-  //     flex-direction: row;
-  //   }
-  // }
-
-  // @media (min-width: 768px) {
-  //   flex-direction: row;
-  // }
 }
 
 .hero-section {
@@ -174,6 +162,10 @@ a {
   align-items: center;
   justify-content: center;
 
+  * {
+      margin-bottom: 15px;
+    }
+
   .button-link {
     @media (min-width: 1024px) {
       margin: 15px 0;
@@ -189,13 +181,26 @@ a {
     }
   }
 
-  * {
-    margin-bottom: 15px;
+  &.contact {
+    width: 600px;
   }
 
   @media (min-width: 1024px) {
     align-items: flex-start;
     margin: auto 20px;
     width: 400px;
+  }
+}
+
+.contact-links, .contact-links-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-links {
+  @media (min-width: 768px){
+    flex-direction: row;
   }
 }
