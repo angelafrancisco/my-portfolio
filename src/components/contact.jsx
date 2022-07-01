@@ -14,15 +14,15 @@ const Contact = () => {
                         And a bonus, if you're in the Portland area, I'd love to grab coffee too!
                     </p>
                     <div className="contact-links-box">
-                        <a href="mailto:angelat.francisco@gmail.com?subject=Hello!" className="contact-link">
+                        <a href="mailto:angelat.francisco@gmail.com?subject=Hello!" className="text-link">
                             <FontAwesomeIcon icon={faEnvelope} className="fa-icon"></FontAwesomeIcon>
                             Email
                         </a>
-                        <a href="https://www.linkedin.com/in/angela-francisco/" className="contact-link">
+                        <a href="https://www.linkedin.com/in/angela-francisco/" className="text-link">
                             <FontAwesomeIcon icon={faLinkedin} className="fa-icon"></FontAwesomeIcon>
                             LinkedIn
                         </a>
-                        <a href="https://github.com/angelafrancisco" className="contact-link">
+                        <a href="https://github.com/angelafrancisco" className="text-link">
                             <FontAwesomeIcon icon={faGithub} className="fa-icon"></FontAwesomeIcon>
                             GitHub
                         </a>

@@ -55,9 +55,6 @@ a {
   
     &:hover {
       color: $dark-link-hover;
-      background-color: $dark-link-hover-bkg;
-      padding: 3px 8px;
-      border-radius: 8px;
     }
   }
   
@@ -193,7 +190,7 @@ a {
   }
 }
 
-.contact-links-box, .contact-link {
+.contact-links-box, .text-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,11 +200,10 @@ a {
 .contact-links-box {
   margin: 50px auto;
 
-  .contact-link {
+  .text-link {
     margin: 0 20px;
     height: 65px;
     width: 65px;
-    color: $dark-link;
 
     .fa-icon {
       path {
@@ -217,7 +213,6 @@ a {
     }
 
     &:hover {
-      color: $dark-link-hover;
       
       .fa-icon path {
         fill: $dark-link-hover;
