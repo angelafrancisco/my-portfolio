@@ -179,8 +179,10 @@ a {
   }
 
   &.contact {
-    width: 600px;
-    align-items: center;
+    @media (min-width: 1024px) {
+      align-items: center;
+      width: 600px;
+    }
   }
 
   @media (min-width: 1024px) {
@@ -194,14 +196,14 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 
 .contact-links-box {
-  margin: 50px auto;
+  flex-direction: row;
 
   .text-link {
-    margin: 0 20px;
+    flex-direction: column;
+    margin: 20px;
     height: 65px;
     width: 65px;
 
@@ -213,14 +215,9 @@ a {
     }
 
     &:hover {
-      
       .fa-icon path {
         fill: $dark-link-hover;
       }
     }
-  }
-
-  @media (min-width: 768px){
-    flex-direction: row;
   }
 }
