@@ -8,6 +8,7 @@ $dark-button-bkg: rgb(0, 163, 184);
 $dark-button-hover: rgb(0, 100, 113);
 $dark-background: rgb(33, 33, 33);
 $dark-nav: rgb(0, 0, 0);
+$dark-footer: rgb(0, 163, 184);
 
 // LIGHT MODE THEME
 $light-text: rgb(33, 33, 33);
@@ -21,13 +22,14 @@ $light-nav: rgb(255, 255, 255);
 @import './styles/portfolio.scss';
 
 * {
-  background-color: $dark-background;
   color: $dark-text;
   margin: 0;
 }
 
 .App {
+  background-color: $dark-background;
   scroll-behavior: smooth;
+  position: relative;
 
   ul {
     list-style-type: none;
@@ -83,6 +85,11 @@ a {
   &.portfolio {
     margin: 0 auto;
   }
+
+  &.contact {
+    margin-bottom: 0;
+  }
+
   @media (min-width: 1024px) {
     max-width: 1024px;
   }
@@ -219,5 +226,44 @@ a {
         fill: $dark-link-hover;
       }
     }
+    
+    &.footer {
+      height: 35px;
+      width: 35px;
+
+      .fa-icon {
+        path {
+            fill: white;
+          }
+        height: 2em;
+      }
+
+      &:hover {
+      .fa-icon path {
+        fill: black;
+      }
+    }
+    }
   }
+}
+
+footer {
+  background-color: $dark-footer;
+  width: 100%;
+  padding: 20px auto;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .footer-text {
+    margin: 20px;
+  }
+
+  // @media (min-width: 1024px){
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  // }
 }
