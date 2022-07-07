@@ -16,3 +16,5 @@ Built with React.js and SCSS
 ## Credits
 
 - Responsive device mockup created by [rawpixel.com](https://www.freepik.com/psd/device-mockup) via [freepik](www.freepik.com)
+- Avatar created by [Pablo Stanley](https://blush.design/collections/rChdrB8vX8xQJunpDPp8/avatars)
+- Icons from [FontAwesome](https://fontawesome.com/)
