@@ -6,6 +6,12 @@ const Header = () => {
         setShowing(!showing)
     }
 
+    const handleCloseMobileMenu = () => {
+        if (showing) {
+            setShowing(false)
+        }
+    }
+
     return (
         <nav className={showing ? "open" : ""}>
             <a className="text-link logo" href="#home">
@@ -19,16 +25,16 @@ const Header = () => {
             <div className="nav-container">
                 <ul className={`nav-link-list ${showing ? "open-mobile" : ""}`}>
                     <li className="nav-link">
-                        <a className="text-link" href="#home">Home</a>
+                        <a onClick={handleCloseMobileMenu} className="text-link" href="#home">Home</a>
                     </li>
                     <li className="nav-link">
-                        <a className="text-link" href="#about">About</a>
+                        <a onClick={handleCloseMobileMenu} className="text-link" href="#about">About</a>
                     </li>
                     <li className="nav-link">
-                        <a className="text-link" href="#portfolio">Portfolio</a>
+                        <a onClick={handleCloseMobileMenu} className="text-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li className="nav-link">
-                        <a className="text-link" href="#contact">Contact</a>
+                        <a onClick={handleCloseMobileMenu} className="text-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
