@@ -95,7 +95,15 @@ nav {
     }
 }
 
-.logo {
+.logo-dark {
+    border: 6px solid #212121;
+    border-top: 0;
+    border-right: 0;
+    border-radius: 50%;
     height: 50px;
     width: 50px;
+    
+    &:hover {
+        border: 3px solid #212121;
+    }
 }

@@ -8,8 +8,8 @@ const Header = () => {
 
     return (
         <nav className={showing ? "open" : ""}>
-            <a className="logo" href="#home">
-                <img className="logo" src="/logo.png" alt="logo" />
+            <a className="text-link logo" href="#home">
+                <img className="logo-dark" src="/logo192.png" alt="logo" />
             </a>
             <div onClick={toggleShowing} className={`nav-mobile-container ${showing ? "move" : ""}`}>
                 <div className="nav-hamburger bar1"></div>

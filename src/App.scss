@@ -50,6 +50,7 @@ $light-nav: rgb(255, 255, 255);
 a {
   text-decoration: none;
   font-weight: bold;
+  background-color: transparent;
   cursor: pointer;
   
   &.text-link {
