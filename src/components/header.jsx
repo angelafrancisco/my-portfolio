@@ -14,7 +14,7 @@ const Header = () => {
 
     return (
         <nav className={showing ? "open" : ""}>
-            <a className="text-link logo" href="#home">
+            <a onClick={handleCloseMobileMenu} className="text-link logo" href="#home">
                 <img className="logo-dark" src="/logo192.png" alt="logo" />
             </a>
             <div onClick={toggleShowing} className={`nav-mobile-container ${showing ? "move" : ""}`}>
