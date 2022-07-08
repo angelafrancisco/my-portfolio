@@ -1,8 +1,8 @@
 const About = () => {
     return (
         <section id="about" className="content-container about">
+            <h1 className="section-title">ABOUT</h1>
             <div className="section-content about">
-                <h1 className="section-title">About</h1>
                 <div className="section-flexbox">
                     <div className="section-box about">
                         <p className="section-text">

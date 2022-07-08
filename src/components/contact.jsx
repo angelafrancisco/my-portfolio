@@ -5,8 +5,8 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 const Contact = () => {
     return (
         <section id="contact" className="content-container contact">
+            <h1 className="section-title">CONTACT</h1>
             <div className="section-content contact">
-                <h1 className="section-title">Contact</h1>
                 <div className="section-box contact">
                     <p className="section-text">
                         Let's connect!

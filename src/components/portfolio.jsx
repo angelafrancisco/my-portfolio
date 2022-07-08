@@ -1,8 +1,8 @@
 const Portfolio = () => {
     return (
         <section id="portfolio" className="content-container portfolio">
+            <h1 className="section-title">PORTFOLIO</h1>
             <div className="section-content portfolio">
-                <h1 className="section-title">Portfolio</h1>
                 <div className="grid-container">
                     <div className="grid-box">
                         <img className="grid-img" src="/img/mockup-bookapp.png" alt="Device preview of website"/>
